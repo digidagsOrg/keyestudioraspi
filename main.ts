@@ -28,3 +28,7 @@ radio.onReceivedNumber(function (receivedNumber) {
 radio.setGroup(1)
 pins.digitalWritePin(DigitalPin.P13, 1)
 pins.digitalWritePin(DigitalPin.P14, 1)
+pins.digitalWritePin(DigitalPin.P15, 1)
+pins.digitalWritePin(DigitalPin.P16, 1)
+pins.digitalWritePin(DigitalPin.P8, 1)
+pins.digitalWritePin(DigitalPin.P12, 1)
