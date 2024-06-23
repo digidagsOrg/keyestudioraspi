@@ -15,6 +15,14 @@ radio.onReceivedNumber(function (receivedNumber) {
         pins.digitalWritePin(DigitalPin.P16, 0)
         basic.pause(100)
         pins.digitalWritePin(DigitalPin.P16, 1)
+    } else if (receivedNumber == 8) {
+        pins.digitalWritePin(DigitalPin.P8, 0)
+        basic.pause(100)
+        pins.digitalWritePin(DigitalPin.P8, 1)
+    } else if (receivedNumber == 12) {
+        pins.digitalWritePin(DigitalPin.P12, 0)
+        basic.pause(100)
+        pins.digitalWritePin(DigitalPin.P12, 1)
     }
 })
 radio.setGroup(1)
