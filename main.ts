@@ -23,6 +23,14 @@ radio.onReceivedNumber(function (receivedNumber) {
         pins.digitalWritePin(DigitalPin.P12, 0)
         basic.pause(100)
         pins.digitalWritePin(DigitalPin.P12, 1)
+    } else if (receivedNumber == 2) {
+        pins.digitalWritePin(DigitalPin.P2, 0)
+        basic.pause(100)
+        pins.digitalWritePin(DigitalPin.P2, 1)
+    } else if (receivedNumber == 1) {
+        pins.digitalWritePin(DigitalPin.P1, 0)
+        basic.pause(100)
+        pins.digitalWritePin(DigitalPin.P1, 1)
     }
 })
 radio.setGroup(1)
@@ -32,3 +40,5 @@ pins.digitalWritePin(DigitalPin.P15, 1)
 pins.digitalWritePin(DigitalPin.P16, 1)
 pins.digitalWritePin(DigitalPin.P8, 1)
 pins.digitalWritePin(DigitalPin.P12, 1)
+pins.digitalWritePin(DigitalPin.P2, 1)
+pins.digitalWritePin(DigitalPin.P1, 1)
